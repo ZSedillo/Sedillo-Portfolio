@@ -1,0 +1,30 @@
+/*
+
+https://alvarotrigo.com/blog/progress-bar-css/
+*/
+
+.skill-container{
+    background-color: #4F7942;
+    font-family: Arial, sans-serif;
+    text-align:center;
+}
+
+.skill-list{
+    display:grid;
+    grid-template-columns:auto auto auto;
+    gap:10%;
+    margin:0 auto;
+    width:70%;
+}
+
+.skill-list ul{
+    padding:0 0 20px;
+}
+
+.skill-list ul li{
+    color:#d8f3dc;
+    font-size:20px;
+    list-style-type: none;
+    padding:10px 0;
+    margin:0;
+}

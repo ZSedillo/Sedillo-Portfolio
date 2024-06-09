@@ -1,0 +1,48 @@
+h1 {
+    color: #d8f3dc;
+    line-height: 1.5;
+    font-size: 48px;
+  }
+  
+  h3 {
+    color: #d8f3dc;
+    font-size: 25px;
+  }
+  
+  p {
+    color: #e5e5e5;
+  }
+  
+  .introduction-container {
+    background-color: #1b4332;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 5rem;
+  }
+  
+  .introduction-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .introduction-content-right {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  @media (max-width: 1200px) {
+    .introduction-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .introduction-content-right {
+      text-align: center;
+      margin:20px;
+    }
+  }
