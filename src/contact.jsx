@@ -3,7 +3,7 @@ import './assets/styles/contact.css'
 import myPhoneNumber from './assets/images/mobile.png'
 import myEmail from './assets/images/communication.png'
 import myGitHub from './assets/images/github.png'
-import myDiscord from './assets/images/discord.png'
+import mySkype from './assets/images/skype.png'
 
 
 function Contact(){
@@ -57,13 +57,13 @@ function Contact(){
                 <a href="https://discord.com/" className="no-style-link">
                 <div className="contacts-option">
                     <div>
-                        <img style={{width:"60px",height:"60px"}} src={myDiscord} alt="Discord" />
+                        <img style={{width:"60px",height:"60px"}} src={mySkype} alt="Discord" />
                     </div>
                     <div>
-                        <h4>Discord</h4>
+                        <h4>Skype</h4>
                     </div>
                     <div>
-                        <p>@spag_1234</p>
+                        <p>live:.cid.169cba7d79cb203c</p>
                     </div>
                 </div>
                 </a>
