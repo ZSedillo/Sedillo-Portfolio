@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com'; // Correct the import path
+import { Link } from 'react-router-dom';
+import emailjs from 'emailjs-com';
 import './assets/styles/emailform.css';
 
 const EmailForm = () => {
@@ -21,7 +22,7 @@ const EmailForm = () => {
             message: message,
         };
 
-        emailjs.send(serviceId, templateId, templateParams,publicKey)
+        emailjs.send(serviceId, templateId, templateParams, publicKey)
             .then((response) => {
                 console.log('Email sent successfully!', response);
                 alert('Zandro has received your message!');
@@ -38,8 +39,8 @@ const EmailForm = () => {
         <>
             <div className="form-container">
                 <form onSubmit={handleSubmit} className='emailForm'>
-                <p style={{color:"#40916c",fontSize:"40px",fontWeight:"bold",textAlign:"center"}}>Send a email to Zandro!</p>
-                <label htmlFor="name">Name : </label>
+                    <p style={{ color: "#40916c", fontSize: "40px", fontWeight: "bold", textAlign: "center" }}>Send a email to Zandro!</p>
+                    <label htmlFor="name">Name: </label>
                     <input
                         type="text"
                         id="name"
@@ -48,8 +49,8 @@ const EmailForm = () => {
                         onChange={(e) => setName(e.target.value)}
                         required
                     />
-                    
-                    <label htmlFor="email">Email Address : </label>
+
+                    <label htmlFor="email">Email Address: </label>
                     <input
                         type="email"
                         id="email"
@@ -58,7 +59,7 @@ const EmailForm = () => {
                         onChange={(e) => setEmail(e.target.value)}
                         required
                     />
-                    
+
                     <textarea
                         cols="20"
                         rows="10"
@@ -68,7 +69,9 @@ const EmailForm = () => {
                         required
                     />
                     <button className="submit-button" type="submit">Send Email</button>
-                    <button className="return-button" type="button" onClick={() => window.location.href = "/App"}>Return</button>
+                    <Link to="/App">
+                        <button className="return-button" type="button">Return</button>
+                    </Link>
                 </form>
             </div>
         </>
