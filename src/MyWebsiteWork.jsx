@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
+import { Link } from 'react-router-dom';
 import './assets/styles/myWebsite.css';
-import Cat from './assets/images/download-modified.png'
+import Cat from './assets/images/download-modified.png';
 
 function MyWebsiteWork() {
     useEffect(() => {
@@ -35,13 +36,13 @@ function MyWebsiteWork() {
                             <div className="WebTableCell navbar-links">
                                 <ul className="WebList">
                                     <li className="WebListItem">
-                                        <a className="a-MyWeb" href="/MyWebsite">About</a>
+                                        <Link className="a-MyWeb" to="/MyWebsite">About</Link>
                                     </li>
                                     <li className="WebListItem">
-                                        <a className="a-MyWeb" href="#"><span className="current-page">Work</span></a>
+                                        <Link className="a-MyWeb" to="#"><span className="current-page">Work</span></Link>
                                     </li>
                                     <li className="WebListItem">
-                                        <a className="a-MyWeb" href="/MyWebsiteNoteP">Notes</a>
+                                        <Link className="a-MyWeb" to="/MyWebsiteNoteP">Notes</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -79,9 +80,9 @@ function MyWebsiteWork() {
                     <h3 className="MyWebH3">I'm currently available for freelance work</h3>
                     <p className="MyWebP">If you have any project that you want to accomplish, <br />then this is the right time to contact me.</p>
                     <div className="message-me">
-                        <a className="a-MyWeb" href="#">
+                        <Link className="a-MyWeb" to="#">
                             <h3 className="message-me-content MyWebH3"> MESSAGE ME</h3>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </main>

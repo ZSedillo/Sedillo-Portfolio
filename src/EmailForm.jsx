@@ -69,7 +69,7 @@ const EmailForm = () => {
                         required
                     />
                     <button className="submit-button" type="submit">Send Email</button>
-                    <Link to="/App">
+                    <Link to="/">
                         <button className="return-button" type="button">Return</button>
                     </Link>
                 </form>
