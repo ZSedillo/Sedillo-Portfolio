@@ -26,7 +26,7 @@ function Skill(){
                         <li>C#</li>
                         <li>R</li>
                         <li>PHP</li>
-                        <li>Qjuery</li>
+                        <li>Jquery</li>
                     </ul>
                 </div>
                 <div className="novice-programming-language">
