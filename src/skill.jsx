@@ -12,8 +12,8 @@ function Skill(){
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
-                        <li>MySQL</li>
                         <li>Derby</li>
+                        <li>Bootstrap</li>
                     </ul>
                 </div>
                 <div className="proficient-programming-language">
@@ -24,6 +24,7 @@ function Skill(){
                         <li>Java</li>
                         <li>C#</li>
                         <li>Python</li>
+                        <li>MySQL</li>
                     </ul>
                 </div>
                 <div className="novice-programming-language">
