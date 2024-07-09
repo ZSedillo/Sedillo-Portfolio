@@ -1,40 +1,40 @@
-import React from 'react'
-import './assets/styles/skill.css'
+import React from 'react';
+import './assets/styles/skill.css';
+import checkMark from './assets/images/check.png';
 
 function Skill(){
     return(
         <div className="skill-container">
-            <p style={{color:"#d8f3dc",fontSize:"40px",fontWeight:"bold",padding:"20px 0 0 0",margin:"0"}}>Skill</p>
-            <p style={{color:"#d8f3dc",fontSize:"30px",fontWeight:"bold"}}>Programming Languages</p>
+            {/* <p style={{color:"#d8f3dc",fontSize:"40px",fontWeight:"bold",padding:"20px 0 0 0",margin:"0"}}>Skill</p> */}
+            <p style={{color:"#d8f3dc",fontSize:"30px",fontWeight:"bold", paddingTop:"50px",textAlign:"center"}}>Technical Skills</p>
             <div className="skill-list">
                 <div className="expert-programming-language">
-                <p style={{color:"#40916c",fontSize:"25px",fontWeight:"bold"}}>Expert</p>
+                <p style={{color:"#40916c",fontSize:"25px",fontWeight:"bold",textAlign:"center"}}>Coding Languages</p>
                     <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>MYSQL</li>
-                        <li>Derby</li>
-                        <li>Python</li>
+                        <li><span><img src={checkMark} alt="check-mark" className='checkMark'/></span>HTML</li>
+                        <li><span><img src={checkMark} alt="check-mark" className='checkMark'/></span>CSS</li>
+                        <li><span><img src={checkMark} alt="check-mark" className='checkMark'/></span>SASS</li>
                     </ul>
                 </div>
                 <div className="proficient-programming-language">
-                <p style={{color:"#40916c",fontSize:"25px",fontWeight:"bold"}}>Proficient</p>
+                <p style={{color:"#40916c",fontSize:"25px",fontWeight:"bold",textAlign:"center"}}>Programming Languages</p>
                     <ul>
-                        <li>React</li>
-                        <li>JavaScript</li>
-                        <li>Java</li>
-                        <li>C#</li>
-                        <li>R</li>
-                        <li>PHP</li>
-                        <li>Jquery</li>
+                        <li><span><img src={checkMark} alt="check-mark" className='checkMark'/></span>Python</li>
+                        <li><span><img src={checkMark} alt="check-mark" className='checkMark'/></span>JavaScript</li>
+                        <li><span><img src={checkMark} alt="check-mark" className='checkMark'/></span>Java</li>
+                        <li><span><img src={checkMark} alt="check-mark" className='checkMark'/></span>C#</li>
+                        <li><span><img src={checkMark} alt="check-mark" className='checkMark'/></span>R</li>
+                        <li><span><img src={checkMark} alt="check-mark" className='checkMark'/></span>PHP</li>
+                        <li><span><img src={checkMark} alt="check-mark" className='checkMark'/></span>Lua</li>
                     </ul>
                 </div>
                 <div className="novice-programming-language">
-                <p style={{color:"#40916c",fontSize:"25px",fontWeight:"bold"}}>Novice</p>
+                <p style={{color:"#40916c",fontSize:"25px",fontWeight:"bold",textAlign:"center"}}>Others</p>
                     <ul>
-                        <li>ASM</li>
-                        <li>SASS</li>
-                        <li>Lua</li>
+                        <li><span><img src={checkMark} alt="check-mark" className='checkMark'/></span>MySQL</li>
+                        <li><span><img src={checkMark} alt="check-mark" className='checkMark'/></span>Derby</li>
+                        <li><span><img src={checkMark} alt="check-mark" className='checkMark'/></span>React</li>
+                        <li><span><img src={checkMark} alt="check-mark" className='checkMark'/></span>jQuery</li>
                     </ul>
                 </div>
             </div>

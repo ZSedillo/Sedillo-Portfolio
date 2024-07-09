@@ -3,10 +3,16 @@
 https://alvarotrigo.com/blog/progress-bar-css/
 */
 
+.checkMark{
+    padding:0 15px;
+    height:20px;
+    width:20px;
+}
+
 .skill-container{
     background-color: #4F7942;
     font-family: Arial, sans-serif;
-    text-align:center;
+    /* text-align:center; */
 }
 
 .skill-list{
