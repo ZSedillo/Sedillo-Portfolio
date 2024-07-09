@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './header.jsx';
 import Introduction from './introduction.jsx';
 import About from './about.jsx';
-import Project from './project.jsx';
+// import Project from './project.jsx';
 import Skill from './skill.jsx';
 import Contact from './contact.jsx';
 import Footer from './footer.jsx';
